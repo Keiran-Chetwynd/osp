@@ -4,25 +4,6 @@
     <title>Data Viewer</title>
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
-    // index.html
-<script>
-const db = new Dexie('MyDatabase');
-db.version(1).stores({
-    entries: '++id,title,content'
-});
-
-async function loadData() {
-    const entries = await db.entries.toArray();
-    const container = document.getElementById('entries');
-    
-    container.innerHTML = entries.map(entry => `
-        <div class="entry">
-            <h2>${entry.title}</h2>
-            <p>${entry.content}</p>
-        </div>
-    `).join('');
-}
-</script>
 </head>
 <body>
     <h1>Data Entries</h1>
