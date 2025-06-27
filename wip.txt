@@ -1,0 +1,43 @@
+val keyItem1 = findViewById<Button>(R.id.keyItem1)
+        val keyItem2 = findViewById<Button>(R.id.keyItem2)
+
+        keyItem1.setOnClickListener {
+            showPopup("Location 1", "This is information about Location 1 on the map.")
+        }
+
+        keyItem2.setOnClickListener {
+            showPopup("Location 2", "Details about Location 2 are shown here.")
+        }
+
+        val keyItem3 = findViewById<Button>(R.id.keyItem3)
+        val keyItem4 = findViewById<Button>(R.id.keyItem4)
+
+        keyItem3.setOnClickListener {
+            showPopup("Location 3", "Details about Location 3.")
+        }
+
+        keyItem4.setOnClickListener {
+            showPopup("Location 4", "Details about Location 4.")
+        }
+
+        val keyItem5 = findViewById<Button>(R.id.keyItem5)
+        val keyItem6 = findViewById<Button>(R.id.keyItem6)
+
+        keyItem5.setOnClickListener {
+            showPopup("Location 5", "This is information about Location 1 on the map.")
+        }
+
+        keyItem6.setOnClickListener {
+            showPopup("Location 6", "Details about Location 2 are shown here.")
+        }
+
+        val keyItem7 = findViewById<Button>(R.id.keyItem7)
+        val keyItem8 = findViewById<Button>(R.id.keyItem8)
+
+        keyItem7.setOnClickListener {
+            showPopup("Location 7", "Details about Location 3.")
+        }
+
+        keyItem8.setOnClickListener {
+            showPopup("Location 8", "Details about Location 4.")
+        }
